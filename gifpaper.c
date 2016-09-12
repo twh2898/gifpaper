@@ -24,6 +24,8 @@
 #include <X11/extensions/Xrandr.h>
 #include <gif_lib.h>
 
+#define GIFPAPER_VERSION "0.1.0"
+
 enum {
     STYLE_CENTER,
     STYLE_TILE,
@@ -166,6 +168,12 @@ void scale(unsigned char *dst, int dstWidth, int dstX, int dstY, int dstW, int d
 
 int main(int argc, char **argv)
 {
+    int i;
+    for (i = 1; i < argc; i++)
+    {
+        if (!strcmp(argv[i], "-v") || !strcmp(argv[i], "--version"))
+            goto version;
+    }
     if (argc < 4)
         goto usage;
 
@@ -423,4 +431,8 @@ int main(int argc, char **argv)
 usage:
     fprintf(stderr, "usage: %s <center|tile|stretch|fit|fill> <anti-aliasing off|on> <animated gif image>\n", argv[0]);
     return 1;
+
+version:
+    printf("Gifpaper v%s\n", GIFPAPER_VERSION);
+    return 0;
 }
