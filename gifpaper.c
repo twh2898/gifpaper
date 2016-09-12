@@ -7,7 +7,7 @@
  *              GNU GCC 6.1.1 20160802
  *              GNU Make 4.2.1 Built for i686-pc-linux-gnu
  *              X.Org 1.18.4
- *              libgif 7.0.0, libX11 6.3.0
+ *              libgif 7.0.0, libX11 6.3.0, libXrandr 2.2.0
  *
  * Description: This program loads an animated gif into memory and displays it
  *              on an X11 desktop as the wallpaper. The animation is controled
