@@ -1,3 +1,21 @@
+/**
+ * Program: GifPaper
+ *
+ * Application: gifpaper
+ *
+ * File: gifpaper.c
+ *
+ * Environment: ArchLinux x86_64 (4.7.1-1-ARCH)
+ *              GNU GCC 6.1.1 20160802
+ *              GNU Make 4.2.1 Built for i686-pc-linux-gnu
+ *              X.Org 1.18.4
+ *              libgif 7.0.0, libX11 6.3.0
+ *
+ *
+ * Description: This program loads an animated gif into memory and displays it
+ *              on an X11 desktop as the wallpaper. The animation is controled
+ *              by the parameters within the gif (ie. wait time, transparency).
+ */
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
