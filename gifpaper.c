@@ -1,7 +1,5 @@
 /**
- * Program: GifPaper
- *
- * Application: gifpaper
+ * Program: gifpaper
  *
  * File: gifpaper.c
  *
@@ -10,7 +8,6 @@
  *              GNU Make 4.2.1 Built for i686-pc-linux-gnu
  *              X.Org 1.18.4
  *              libgif 7.0.0, libX11 6.3.0
- *
  *
  * Description: This program loads an animated gif into memory and displays it
  *              on an X11 desktop as the wallpaper. The animation is controled
