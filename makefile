@@ -6,6 +6,8 @@ OUTPUT=gifpaper
 
 all: build
 
+install:
+	cp gifpaper /usr/local/bin/
 build: gifpaper.o
 	$(CC) gifpaper.o -o $(OUTPUT) -lX11 -lgif -lXrandr 
 
